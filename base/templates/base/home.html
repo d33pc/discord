@@ -1,4 +1,4 @@
-{% extends 'main.html' %}
+{% extends 'base/main.html' %}
 
 {% block content %}
     <h1>Home Template</h1>
@@ -8,7 +8,7 @@
                 <span>@{{room.host.username}}</span>
                 <h3>{{room.id}} -- <a href="{% url 'room' room.id %}">{{room.name}}</a></h3>
                 <h5>{{room.topic.name}}</h5>
-                <hr> 
+                <hr>
             </div>
         {% endfor %}       
     </div>
