@@ -1,2 +1,9 @@
-<h1>NAVBAR</h1>
-<hr>
+<a href="/">
+    <h1>NAVBAR</h1>
+</a>
+<form method="GET" action="{% url 'home' %}">
+  <div>
+    <input type="search" id="mySearch" name="q" placeholder="Search Rooms...">
+    <button>Search</button>
+  </div>
+</form>
