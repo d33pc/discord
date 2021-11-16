@@ -6,7 +6,6 @@ from .forms import RoomForm
 
 def home(request):
     q = request.GET.get('q') if request.GET.get('q') != None else ''
-    print("q:= ", q)
     rooms = Room.objects.filter(
         Q(host__username__icontains=q) |
         Q(topic__name__icontains=q) | 
